@@ -1,0 +1,74 @@
+.questionnaire-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: white; /* Change as needed */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Increased font size */
+    margin-bottom: 20px;
+  }
+  
+  .question-text {
+    font-size: 1.5rem; /* Increased font size for question */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .options {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+ /* Stack options vertically */
+    margin-bottom: 20px;
+    width: 100%; /* Full width for options */
+  }
+  
+  .option {
+    margin: 10px 0;
+    font-size: 1.2rem; /* Increased font size for options */
+    border: 2px solid #007bff; /* Border for the option */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    background-color: #f8f9fa; /* Light background */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .option:hover {
+    background-color: #e2e6ea; /* Change background on hover */
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .back-button, .next-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover, .next-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: gray;
+    text-align: center;
+  }
