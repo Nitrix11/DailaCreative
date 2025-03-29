@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 import pic1 from "../assets/crpic-removebg-preview 1.png";
 import logo from "../assets/DailACreative.svg";
-
+import"./css/Hero.css"
 const ConnectSection = () => {
   return (
     <div style={{ 
@@ -78,6 +78,7 @@ const ConnectSection = () => {
       </div>
       
       <img 
+      className='pic1'
         src={pic1} 
         alt="Man smiling" 
         style={{ 
