@@ -4,7 +4,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import pic1 from '../assets/pic2.png';
 import logo from '../assets/DailACreative.png';
-
+import { Link } from 'react-router-dom';
 const SignUpSection = () => {
   const [fullName, setFullName] = useState(''); // State to store the full name
   const [email, setEmail] = useState(''); // State to store the email
@@ -33,12 +33,15 @@ const SignUpSection = () => {
     <div className="sign-up-container">
       <div className="image-container">
         <nav className="navbar">
+          <Link to="/">
           <img 
             src={logo} 
             alt="Logo" 
-            className="logo" 
+            className="logoS" 
             onClick={scrollToHero} 
           />
+          </Link>
+     
         </nav>
         <img src={pic1} alt="Background" className="background-image" />
         <div className="text-overlay">

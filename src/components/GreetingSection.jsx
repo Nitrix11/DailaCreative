@@ -25,6 +25,7 @@ const GreetingSection = () => {
             <p>It will only take a few minutes</p>
             <hr className="divider" />
             <p>Help us help you</p>
+            <hr className="divider" />
           </div>
           
           <button className="get-started-button" onClick={handleGetStarted}>Get Started!</button>

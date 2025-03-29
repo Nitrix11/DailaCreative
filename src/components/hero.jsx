@@ -32,8 +32,8 @@ const ConnectSection = () => {
         zIndex: 2, 
         borderBottom: '1px solid #eee' 
       }}>
-        <div style={{ color: 'black', fontWeight: 'bold' }}>
-          <img src={logo} alt="Logo" />
+        <div style={{ color: 'black', fontWeight: 'bold' ,}}>
+          <img src={logo} className="logoH" alt="Logo" />
         </div> 
         <div>{/* Add your navigation links here */}</div>
       </nav>
@@ -49,7 +49,7 @@ const ConnectSection = () => {
           width: "30%"
         }} />
         
-        <p style={{ marginBottom: '30px' }}>Join Our Waiting List, fill out form below</p>
+        <p style={{ marginBottom: '30px', fontWeight:"bold" }}>Join Our Waiting List, fill out form below</p>
         <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '20px' }}>
           <Link to="/sign-up">
             <button style={{ 
