@@ -1,77 +1,131 @@
 .questionnaire-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
-    background-color: white; /* Change as needed */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: white; /* Change as needed */
+}
+
+h1 {
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 1.5rem; /* Increased font size for question */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%; /* Full width for options */
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1.2rem; /* Increased font size for options */
+  border: 2px solid #F7941D; /* Border for the option */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px;
+  width: 20%;
+  height: 100px;
+  align-items: center; /* Center the text vertically */
+  background-color: #f8f9fa; /* Light background */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.option:hover {
+  background-color: #e2e6ea; /* Change background on hover */
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.back-button,
+.next-button {
+  background-color: #F7941D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover,
+.next-button:hover {
+  background-color: #f7951de8; /* Darker color on hover */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 1.9rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Media Queries */
+
+/* For mobile devices (up to 320px) */
+@media (max-width: 320px) {
   h1 {
-    font-size: 2.5rem; /* Increased font size */
-    margin-bottom: 20px;
+    font-size: 1.8rem; /* Reduced font size for mobile */
   }
-  
+
   .question-text {
-    font-size: 1.5rem; /* Increased font size for question */
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 1.2rem; /* Reduced font size for mobile */
   }
-  
-  .options {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
- /* Stack options vertically */
-    margin-bottom: 20px;
-    width: 100%; /* Full width for options */
-  }
-  
+
   .option {
-    margin: 10px 0;
-  
-    font-size: 1.2rem; /* Increased font size for options */
-    border: 2px solid #007bff; /* Border for the option */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px;
-    width: 20%;
-    height: 100px;
-    display: flex;
-    align-items: center; /* Center the text vertically */
-    background-color: #f8f9fa; /* Light background */
-    transition: background-color 0.3s; /* Transition for hover effect */
+    font-size: 1rem; /* Reduced font size for options */
+    width: 80%; /* Adjust option width */
   }
-  
-  .option:hover {
-    background-color: #e2e6ea; /* Change background on hover */
-  }
-  
+
   .navigation-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column; /* Stack buttons vertically */
   }
-  
+
   .back-button, .next-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    width: 100%; /* Full width for buttons */
+    margin-bottom: 10px; /* Space between buttons */
   }
-  
-  .back-button:hover, .next-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* For tablets (up to 425px) */
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2rem; /* Reduced font size for tablets */
   }
-  
-  /* Footer */
-  footer {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: gray;
-    text-align: center;
+
+  .question-text {
+    font-size: 1.4rem; /* Reduced font size for tablets */
   }
+
+  .option {
+    font-size: 1.1rem; /* Slightly reduced font size for options */
+    width: 40%; /* Adjust option width */
+  }
+
+  .navigation-buttons {
+    flex-direction: row; /* Maintain row layout for buttons */
+  }
+
+  .back-button, .next-button {
+    width: auto; /* Adjust button width */
+  }
+}

@@ -2,54 +2,54 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/Questionnaire.css'; // Ensure this path is correct
 
-// Updated questions array with four and five questions added
+// Updated questions array with icons
 const questions = [
   {
-    question: "What is your biggest challenge in finding consistent work opportunies",
+    question: "What is your biggest challenge in finding consistent work opportunities?",
     options: [
-      "Finding reliable and high-quality talent.",
-      "Managing project timelines and communications.",
-      "Staying within budget."
+      { text: "Finding reliable and high-quality talent.", icon: "🔍" }, // Replace with your icon
+      { text: "Managing project timelines and communications.", icon: "🗓️" },
+      { text: "Staying within budget.", icon: "💰" }
     ]
   },
   {
-    question: "How do you currently find new project or clients",
+    question: "How do you currently find new projects or clients?",
     options: [
-      "Online platforms and marketplaces.",
-      "Word of mouth and personal referrals.",
-      "Social media and local listings."
+      { text: "Online platforms and marketplaces.", icon: "🌐" },
+      { text: "Word of mouth and personal referrals.", icon: "🗣️" },
+      { text: "Social media and local listings.", icon: "📱" }
     ]
   },
   {
     question: "What feature would make a creative services platform most appealing to you?",
     options: [
-      "Ability to find local creatives for in-person projects.",
-      "Access to a diverse range of creative services.",
-      "AI-driven quality control and project management."
+      { text: "Ability to find local creatives for in-person projects.", icon: "📍" },
+      { text: "Access to a diverse range of creative services.", icon: "🎨" },
+      { text: "AI-driven quality control and project management.", icon: "🤖" }
     ]
   },
   {
-    question: "How important is it for you to have access to a platform that connects you with local clients for in-person project",
+    question: "How important is it for you to have access to a platform that connects you with local clients for in-person projects?",
     options: [
-      "Very important - I prefer in person work.",
-      "Managing project timelines and deadlines.",
-      "Negotiating fair pricing and compensation."
+      { text: "Very important - I prefer in-person work.", icon: "❤️" },
+      { text: "Somewhat important - it depends on the project.", icon: "💼" },
+      { text: "Not very important - I prefer remote work.", icon: "🏡" }
     ]
   },
   {
-    question: "What is your primary concern when working with clients",
+    question: "What is your primary concern when working with clients?",
     options: [
-      "Ensuring consistent quality of work.",
-      "Somewhat import - it depends on the project",
-      "Not very important - I prefer remote work"
+      { text: "Ensuring consistent quality of work.", icon: "⭐" },
+      { text: "Somewhat important - it depends on the project.", icon: "🔄" },
+      { text: "Not very important - I prefer remote work.", icon: "🚀" }
     ]
   },
   {
-    question:" How much commission are you willing to pay to use a platform tthat guaratees consistent work opportunies",
+    question: "How much commission are you willing to pay to use a platform that guarantees consistent work opportunities?",
     options: [
-      "Up to 20% commission for guaranted work",
-      "Between 10% to 20% commission",
-      "Less than 10% commission"
+      { text: "Up to 20% commission for guaranteed work.", icon: "💸" },
+      { text: "Between 10% to 20% commission.", icon: "📊" },
+      { text: "Less than 10% commission.", icon: "🔻" }
     ]
   }
 ];
@@ -81,8 +81,8 @@ const Questionnaire = () => {
       <div className="options">
         {questions[currentQuestionIndex].options.map((option, index) => (
           <label key={index} className="option">
-            <input type="radio" name="option" value={option} />
-            {option}
+            <input type="radio" name="option" value={option.text} />
+            <span role="img" aria-label="icon">{option.icon}</span> {option.text}
           </label>
         ))}
       </div>

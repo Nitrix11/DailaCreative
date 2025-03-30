@@ -1,39 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-  margin: 0;
-  padding: 0;
-transition: all;
-  font-family: Arial, Helvetica, sans-serif;
 
-}
-.thank-you-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h1{
+  .navbar{
+    background-color: black;
+    width: 98vw;
+    height: auto;
+    
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    transition: all;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .thank-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .thank-you-container h1 {
     font-size: 26px;
     padding-top: 30px;
   }
-  p{
-    padding-top:100px ;
+  
+  .thank-you-container p {
+    padding-top: 100px;
     font-weight: bold;
     font-size: xx-large;
     color: black;
   }
-}
-.logoH{
-  width: 65%;
-}
-.logoS{
-  width: 25%;
-}
-.logoM{
-  width: 25%;
-}
-.sign-up-container {
+  
+  .logoH {
+    width: 35%;
+  }
+  
+  .logoS {
+    width: 10%;
+  }
+  
+  .logoM {
+    width: 25%;
+  }
+  
+  .sign-up-container {
     display: flex;
     height: 100vh;
   }
@@ -87,7 +101,7 @@ transition: all;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #007bff;
+    background-color: #F7941D;
     color: white;
     padding: 3rem;
     width: 50%;
@@ -115,23 +129,48 @@ transition: all;
   
   .submit-button {
     background-color: white;
-    color: #007bff;
+    color: #F7941D;
     padding: 10px;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     width: 100%;
     cursor: pointer;
-  }  
-  @media (max-width:425px) {
-    .image-container{
+  }
+  
+  /* Media Queries */
+  
+  /* For mobile devices (up to 320px) */
+  @media (max-width: 320px) {
+    .thank-you-container p {
+      font-size: 16px; /* Reduced font size for mobile */
+    }
+  
+    .text-overlay h2 {
+      font-size: 25px; /* Reduced font size for mobile */
+    }
+  
+    .submit-button {
+      padding: 8px; /* Smaller button padding */
+    }
+  }
+  
+  /* For tablets (up to 425px) */
+  @media (max-width: 425px) {
+    .image-container {
       display: flex;
       flex-direction: column;
     }
-    .text-overlay{
-      h2{
-        font-size: 20px;
-
-      }
+  
+    .text-overlay h2 {
+      font-size: 40px; /* Reduced font size for tablets */
+    }
+  
+    .thank-you-container p {
+      font-size: 18px; /* Slightly reduced font size for tablets */
+    }
+  
+    .submit-button {
+      padding: 10px; /* Adjust button padding for tablets */
     }
   }

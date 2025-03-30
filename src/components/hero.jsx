@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
-import pic1 from "../assets/crpic-removebg-preview 1.png";
-import logo from "../assets/DailACreative.svg";
+import pic1 from "../assets/Group 2.png";
+import logo from "../assets/dail_logo-removebg-preview 4.svg";
 import"./css/Hero.css"
 const ConnectSection = () => {
   return (
     <div style={{ 
-      backgroundColor: '#282c34', 
-      color: 'white',
+      backgroundColor: '#fff', 
+      color: 'black',
       textAlign: 'left',
       height: '75vh',
       display: 'flex',
@@ -24,7 +24,7 @@ const ConnectSection = () => {
         top: 0, 
         left: 0, 
         width: '100%', 
-        backgroundColor: 'white', 
+        backgroundColor: 'black', 
         padding: '20px', 
         display: 'flex', 
         justifyContent: 'space-between', 
@@ -40,21 +40,26 @@ const ConnectSection = () => {
 
       <div style={{ maxWidth: '800px', margin: 'auto 0', position: 'relative', zIndex: 1 }}> 
         <h2 style={{ fontSize: '2.5em', marginBottom: '20px' }}>Connect with Creatives.<br />Connect with Ease.</h2>
-        
+        <p style={{width:"60%"}}>
+        Dial-a-Creative instantly connects you with top creatives 
+for in-person or remote projects. Get high-quality work, 
+fast and hassle-free, with AI-powered project management.
+        </p>
         {/* Horizontal Line */}
         <hr style={{
           border: 'none',
           borderTop: '2px solid white',
           margin: '20px 0',
-          width: "30%"
+          width: "30%",
+          color:"#FE5208",
         }} />
         
         <p style={{ marginBottom: '30px', fontWeight:"bold" }}>Join Our Waiting List, fill out form below</p>
         <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '20px' }}>
           <Link to="/sign-up">
             <button style={{ 
-              backgroundColor: 'white', 
-              color: 'black',  
+              backgroundColor: 'black', 
+              color: 'white',  
               padding: '10px 20px',
               border: 'none',
               borderRadius: '5px',
@@ -64,7 +69,7 @@ const ConnectSection = () => {
           </Link>
           <Link to="/media">
           <button style={{ 
-            backgroundColor: '#007bff', 
+            backgroundColor: '#F7941D', 
             color: 'white',
             padding: '10px 20px',
             border: 'none',
@@ -86,7 +91,8 @@ const ConnectSection = () => {
           right: '50px', 
           top: '50%', 
           transform: 'translateY(-50%)',
-          maxWidth: '40%', 
+          maxWidth: '40%',
+          maxHeight:"600px", 
           borderRadius: '10px', 
           zIndex: 0 
         }} 
@@ -94,8 +100,8 @@ const ConnectSection = () => {
       
       {/* Copyright Section */}
       <div style={{ 
-        backgroundColor: 'white',
-        color: 'black',
+        backgroundColor: 'black',
+        color: 'white',
         textAlign: 'center',
         padding: '20px 0',
         fontSize: '1.2em',

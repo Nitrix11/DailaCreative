@@ -2,46 +2,46 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/Questionnaire.css'; // Ensure this path is correct
 
-// Updated questions array with four and five questions added
+// Updated questions array with icons for each option
 const questions = [
   {
     question: "What is your biggest challenge when hiring creative professionals?",
     options: [
-      "Finding reliable and high-quality talent.",
-      "Managing project timelines and communications.",
-      "Staying within budget."
+      { text: "Finding reliable and high-quality talent.", icon: "🧑‍🎨" }, // Replace with your icon
+      { text: "Managing project timelines and communications.", icon: "📅" }, // Replace with your icon
+      { text: "Staying within budget.", icon: "💰" } // Replace with your icon
     ]
   },
   {
     question: "How do you currently find creative professionals for your projects?",
     options: [
-      "Online platforms and marketplaces.",
-      "Word of mouth and personal referrals.",
-      "Social media and local listings."
+      { text: "Online platforms and marketplaces.", icon: "🌐" },
+      { text: "Word of mouth and personal referrals.", icon: "🗣️" },
+      { text: "Social media and local listings.", icon: "📱" }
     ]
   },
   {
     question: "What feature would make a creative services platform most appealing to you?",
     options: [
-      "Ability to find local creatives for in-person projects.",
-      "Access to a diverse range of creative services.",
-      "AI-driven quality control and project management."
+      { text: "Ability to find local creatives for in-person projects.", icon: "📍" },
+      { text: "Access to a diverse range of creative services.", icon: "🎨" },
+      { text: "AI-driven quality control and project management.", icon: "🤖" }
     ]
   },
   {
     question: "What is your primary concern when working with freelancers or creatives?",
     options: [
-      "Ensuring consistent quality of work.",
-      "Managing project timelines and deadlines.",
-      "Negotiating fair pricing and compensation."
+      { text: "Ensuring consistent quality of work.", icon: "⭐" },
+      { text: "Managing project timelines and deadlines.", icon: "⏳" },
+      { text: "Negotiating fair pricing and compensation.", icon: "💬" }
     ]
   },
   {
     question: "What additional services would you like to see on a creative platform?",
     options: [
-      "Project management tools.",
-      "Client reviews and ratings.",
-      "Training and resources for creatives."
+      { text: "Project management tools.", icon: "🛠️" },
+      { text: "Client reviews and ratings.", icon: "⭐️" },
+      { text: "Training and resources for creatives.", icon: "📚" }
     ]
   }
 ];
@@ -73,8 +73,8 @@ const Questionnaire = () => {
       <div className="options">
         {questions[currentQuestionIndex].options.map((option, index) => (
           <label key={index} className="option">
-            <input type="radio" name="option" value={option} />
-            {option}
+            <input type="radio" name="option" value={option.text} />
+            <span role="img" aria-label="icon">{option.icon}</span> {option.text}
           </label>
         ))}
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './css/GreetingSection.css'; // Ensure this path is correct
-import thumbsUpImage from '../assets/blue.png'; // Ensure you have an appropriate image
+import thumbsUpImage from '../assets/Group 1.png'; // Ensure you have an appropriate image
 
 const GreetingSection = () => {
   const location = useLocation();
