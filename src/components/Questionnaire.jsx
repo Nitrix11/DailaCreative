@@ -3,15 +3,46 @@ import { useNavigate } from 'react-router-dom';
 import './css/Questionnaire.css'; // Ensure this path is correct
 
 const questions = [
-    {
-        question: "What is your biggest challenge when hiring creative professionals?",
-        options: [
-            { text: "Finding reliable and high-quality talent.", icon: "🧑‍🎨" },
-            { text: "Managing project timelines and communications.", icon: "📅" },
-            { text: "Staying within budget.", icon: "💰" }
-        ]
-    },
-    // Add other questions similarly...
+  {
+    question: "What is your biggest challenge when hiring creative professionals?",
+    options: [
+      { text: "Finding reliable and high-quality talent.", icon: "🧑‍🎨" }, // Replace with your icon
+      { text: "Managing project timelines and communications.", icon: "📅" }, // Replace with your icon
+      { text: "Staying within budget.", icon: "💰" } // Replace with your icon
+    ]
+  },
+  {
+    question: "How do you currently find creative professionals for your projects?",
+    options: [
+      { text: "Online platforms and marketplaces.", icon: "🌐" },
+      { text: "Word of mouth and personal referrals.", icon: "🗣️" },
+      { text: "Social media and local listings.", icon: "📱" }
+    ]
+  },
+  {
+    question: "What feature would make a creative services platform most appealing to you?",
+    options: [
+      { text: "Ability to find local creatives for in-person projects.", icon: "📍" },
+      { text: "Access to a diverse range of creative services.", icon: "🎨" },
+      { text: "AI-driven quality control and project management.", icon: "🤖" }
+    ]
+  },
+  {
+    question: "What is your primary concern when working with freelancers or creatives?",
+    options: [
+      { text: "Ensuring consistent quality of work.", icon: "⭐" },
+      { text: "Managing project timelines and deadlines.", icon: "⏳" },
+      { text: "Negotiating fair pricing and compensation.", icon: "💬" }
+    ]
+  },
+  {
+    question: "What additional services would you like to see on a creative platform?",
+    options: [
+      { text: "Project management tools.", icon: "🛠️" },
+      { text: "Client reviews and ratings.", icon: "⭐️" },
+      { text: "Training and resources for creatives.", icon: "📚" }
+    ]
+  }
 ];
 
 const Questionnaire = () => {
