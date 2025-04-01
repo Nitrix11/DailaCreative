@@ -68,7 +68,7 @@ const Questionnaire = () => {
 
   return (
     <div className="questionnaire-container">
-      <h1>{`Question ${currentQuestionIndex + 1}/${questions.length}`}</h1>
+      <h1 className='numbers'>{` ${currentQuestionIndex + 1}/${questions.length}`}</h1>
       <p className="question-text">{questions[currentQuestionIndex].question}</p>
       <div className="options">
         {questions[currentQuestionIndex].options.map((option, index) => (

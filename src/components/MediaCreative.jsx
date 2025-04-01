@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate for naviga
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import pic1 from '../assets/pic2.png';
-import logo from '../assets/DailACreative.png';
+
 import { Link } from 'react-router-dom';
 const SignUpSection2 = () => {
   const [fullName, setFullName] = useState(''); // State to store the full name
@@ -33,14 +33,7 @@ const SignUpSection2 = () => {
     <div className="sign-up-container">
       <div className="image-container">
         <nav className="navbar">
-          <Link to="/">
-          <img 
-            src={logo} 
-            alt="Logo" 
-            className="logoM" 
-            onClick={scrollToHero} 
-          />
-          </Link>
+        
        
         </nav>
         <img src={pic1} alt="Background" className="background-image" />

@@ -17,7 +17,7 @@ const GreetingSection = () => {
       <div className="greeting-content">
         <div className="text-section">
           <h1>Hey {fullName},</h1>
-          <p>Reach more clients,manage rojects efficiently,<br/>and grow our creative business.</p>
+          <p>Reach more clients,manage projects efficiently,<br/>and grow our creative business.</p>
           
           <div className="questions">
             <p>Answer a few questions to help with your guest:</p>

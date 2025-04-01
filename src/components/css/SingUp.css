@@ -16,7 +16,7 @@
     padding: 1rem;
     z-index: 2; /* Ensure it's above the image */
   }
-  
+ 
   .logo {
     max-width: 100px;
     cursor: pointer;

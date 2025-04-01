@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-  .navbar{
+  .navbar1{
     background-color: black;
-    width: 98vw;
+    width: 99vw;
     height: auto;
     
   }
@@ -157,6 +157,7 @@
   
   /* For tablets (up to 425px) */
   @media (max-width: 425px) {
+    
     .image-container {
       display: flex;
       flex-direction: column;
@@ -173,4 +174,27 @@
     .submit-button {
       padding: 10px; /* Adjust button padding for tablets */
     }
+  
+  }
+  
+  /* For tablets (up to 425px) */
+  @media (max-width: 320px) {
+    
+    .image-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .text-overlay h2 {
+      font-size: 40px; /* Reduced font size for tablets */
+    }
+  
+    .thank-you-container p {
+      font-size: 18px; /* Slightly reduced font size for tablets */
+    }
+  
+    .submit-button {
+      padding: 10px; /* Adjust button padding for tablets */
+    }
+  
   }

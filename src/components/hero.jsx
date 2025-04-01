@@ -5,11 +5,11 @@ import logo from "../assets/dail_logo-removebg-preview 4.svg";
 import"./css/Hero.css"
 const ConnectSection = () => {
   return (
-    <div style={{ 
+    <div id="hero" style={{ 
       backgroundColor: '#fff', 
       color: 'black',
       textAlign: 'left',
-      height: '75vh',
+      height: '70vh',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
@@ -19,24 +19,8 @@ const ConnectSection = () => {
       fontFamily: 'sans-serif' 
     }}>
       {/* Navigation */}
-      <nav style={{ 
-        position: 'absolute', 
-        top: 0, 
-        left: 0, 
-        width: '100%', 
-        backgroundColor: 'black', 
-        padding: '20px', 
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        alignItems: 'center',
-        zIndex: 2, 
-        borderBottom: '1px solid #eee' 
-      }}>
-        <div style={{ color: 'black', fontWeight: 'bold' ,}}>
-          <img src={logo} className="logoH" alt="Logo" />
-        </div> 
-        <div>{/* Add your navigation links here */}</div>
-      </nav>
+    
+  
 
       <div style={{ maxWidth: '800px', margin: 'auto 0', position: 'relative', zIndex: 1 }}> 
         <h2 style={{ fontSize: '2.5em', marginBottom: '20px' }}>Connect with Creatives.<br />Connect with Ease.</h2>
@@ -48,9 +32,9 @@ fast and hassle-free, with AI-powered project management.
         {/* Horizontal Line */}
         <hr style={{
           border: 'none',
-          borderTop: '2px solid white',
+          borderTop: '2px solid #FE5208',
           margin: '20px 0',
-          width: "30%",
+          width: "20%",
           color:"#FE5208",
         }} />
         
@@ -91,8 +75,8 @@ fast and hassle-free, with AI-powered project management.
           right: '50px', 
           top: '50%', 
           transform: 'translateY(-50%)',
-          maxWidth: '40%',
-          maxHeight:"600px", 
+          maxWidth: '100%',
+          maxHeight:"820px", 
           borderRadius: '10px', 
           zIndex: 0 
         }} 
