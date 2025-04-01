@@ -1,101 +1,33 @@
+
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
 import pic1 from "../assets/Group 2.png";
 import logo from "../assets/dail_logo-removebg-preview 4.svg";
-import"./css/Hero.css"
+
+
 const ConnectSection = () => {
   return (
-    <div id="hero" style={{ 
-      backgroundColor: '#fff', 
-      color: 'black',
-      textAlign: 'left',
-      height: '70vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-      padding: '80px 20px', 
-      position: 'relative', 
-      overflow: 'hidden', 
-      fontFamily: 'sans-serif' 
-    }}>
+    <div id="hero">
       {/* Navigation */}
-    
-  
-
-      <div style={{ maxWidth: '800px', margin: 'auto 0', position: 'relative', zIndex: 1 }}> 
-        <h2 style={{ fontSize: '2.5em', marginBottom: '20px' }}>Connect with Creatives.<br />Connect with Ease.</h2>
-        <p style={{width:"60%"}}>
-        Dial-a-Creative instantly connects you with top creatives 
-for in-person or remote projects. Get high-quality work, 
-fast and hassle-free, with AI-powered project management.
-        </p>
+      <div className="nav-container">
+        <h2>Connect with Creatives.<br />Connect with Ease.</h2>
+        <p className="description">Dial-a-Creative instantly connects you with top creatives for in-person or remote projects. Get high-quality work, fast and hassle-free, with AI-powered project management.</p>
         {/* Horizontal Line */}
-        <hr style={{
-          border: 'none',
-          borderTop: '2px solid #FE5208',
-          margin: '20px 0',
-          width: "20%",
-          color:"#FE5208",
-        }} />
-        
-        <p style={{ marginBottom: '30px', fontWeight:"bold" }}>Join Our Waiting List, fill out form below</p>
-        <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '20px' }}>
+        <hr className="horizontal-line" />
+        <p className="join-list">Join Our Waiting List, fill out form below</p>
+        <div className="button-container">
           <Link to="/sign-up">
-            <button style={{ 
-              backgroundColor: 'black', 
-              color: 'white',  
-              padding: '10px 20px',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer',
-              fontWeight: 'bold' 
-            }}>I'm Seeking A Creative</button>
+            <button className="button">I'm Seeking A Creative</button>
           </Link>
           <Link to="/media">
-          <button style={{ 
-            backgroundColor: '#F7941D', 
-            color: 'white',
-            padding: '10px 20px',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            fontWeight: 'bold' 
-          }}>I'm A Media Creative</button>
+            <button className="button orange">I'm A Media Creative</button>
           </Link>
-       
         </div>
       </div>
-      
-      <img 
-      className='pic1'
-        src={pic1} 
-        alt="Man smiling" 
-        style={{ 
-          position: 'absolute', 
-          right: '50px', 
-          top: '50%', 
-          transform: 'translateY(-50%)',
-          maxWidth: '100%',
-          maxHeight:"820px", 
-          borderRadius: '10px', 
-          zIndex: 0 
-        }} 
-      />
-      
+      <img className="pic1" src={pic1} alt="Man smiling" />
       {/* Copyright Section */}
-      <div style={{ 
-        backgroundColor: 'black',
-        color: 'white',
-        textAlign: 'center',
-        padding: '20px 0',
-        fontSize: '1.2em',
-        fontWeight: 'bold',
-        width: '100%',
-        position: 'absolute',
-        bottom: 0,
-        left: 0
-      }}>
-        <p style={{ margin: 0 }}>Copyright 2025 All Rights Reserved</p>
+      <div className="copyright-section">
+        <p>Copyright 2025 All Rights Reserved</p>
       </div>
     </div>
   );
