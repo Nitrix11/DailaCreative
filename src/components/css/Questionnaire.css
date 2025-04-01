@@ -7,6 +7,13 @@
   padding: 20px;
   background-color: white; /* Change as needed */
 }
+.navigation-buttons{
+  button:hover{
+    background-color: #fff;
+    color: #F7941D;
+    border: 2px solid #F7941D;
+  }
+}
 
 h1 {
   font-size: 1.5rem; /* Increased font size */
@@ -76,7 +83,7 @@ h1 {
   text-align: left;
   position: absolute;
   left: 170px;
-  top: 180px;
+  top: 120px;
 
  
 }
@@ -299,5 +306,77 @@ footer {
 
   .back-button, .next-button {
     width: auto; /* Adjust button width */
+  }
+}
+/*mmmmmm*/
+/* Questionnaire Container */
+.questionnaire-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 83vh;
+  padding: 20px;
+  background-color: white; /* Change as needed */
+}
+
+/* Question Number Bar */
+.question-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.question-bar {
+  width: 30px; /* Adjust width as needed */
+  height: 5px;
+  background-color: grey; /* Default color for unanswered questions */
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.question-bar.active {
+  background-color: #F7941D; /* Color for answered questions */
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.back-button,
+.next-button {
+  background-color: #F7941D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover,
+.next-button:hover {
+  background-color: #f7951de8; /* Darker color on hover */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 1.9rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 425px) {
+  .question-text {
+      font-size: 10px;
+  }
+  .option {
+      font-size: 10px;
   }
 }

@@ -11,7 +11,7 @@ const ConnectSection = () => {
       {/* Navigation */}
       <div className="nav-container">
         <h2>Connect with Creatives.<br />Connect with Ease.</h2>
-        <p className="description">Dial-a-Creative instantly connects you with top creatives for in-person or remote projects. Get high-quality work, fast and hassle-free, with AI-powered project management.</p>
+        <p className="description">Dial-a-Creative instantly connects you with top creatives <br />for in-person or remote projects. Get high-quality work, <br />fast and hassle-free, with AI-powered project management.</p>
         {/* Horizontal Line */}
         <hr className="horizontal-line" />
         <p className="join-list">Join Our Waiting List, fill out form below</p>
