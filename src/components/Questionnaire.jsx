@@ -67,12 +67,7 @@ const Questionnaire = () => {
 
     return (
         <div className="questionnaire-container">
-            <div className="question-number">
-                {questions.map((_, index) => (
-                    <div key={index} className={`question-bar ${index <= currentQuestionIndex ? 'active' : ''}`}></div>
-                ))}
-            </div>
-
+           
             <h1 className='numbers'>{currentQuestionIndex + 1}/{questions.length}</h1>
 
             <p className="question-text">{questions[currentQuestionIndex].question}</p>
@@ -89,6 +84,11 @@ const Questionnaire = () => {
             <div className="navigation-buttons">
                 <button onClick={handleBack} className="back-button">Back</button>
                 <button onClick={handleNext} className="next-button">Next</button>
+            </div>
+            <div className="question-number">
+                {questions.map((_, index) => (
+                    <div key={index} className={`question-bar ${index <= currentQuestionIndex ? 'active' : ''}`}></div>
+                ))}
             </div>
 
             <footer>

@@ -14,6 +14,7 @@ function App() {
     <Router>
        <Layout></Layout>
       <Routes>
+     
       <Route path="/" element={<Hero/>} />
         <Route path="/sign-up" element={<SignUpSection />} />
         <Route path="/media" element={<Media/>} />

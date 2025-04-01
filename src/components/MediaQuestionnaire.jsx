@@ -76,6 +76,8 @@ const Questionnaire = () => {
 
   return (
     <div className="questionnaire-container">
+          
+
       <h1 className='numbers'>{` ${currentQuestionIndex + 1}/${questions.length}`}</h1>
       <p className="question-text">{questions[currentQuestionIndex].question}</p>
       <div className="options">
@@ -90,6 +92,11 @@ const Questionnaire = () => {
         <button onClick={handleBack} className="back-button">Back</button>
         <button onClick={handleNext} className="next-button">Next</button>
       </div>
+      <div className="question-number">
+                {questions.map((_, index) => (
+                    <div key={index} className={`question-bar ${index <= currentQuestionIndex ? 'active' : ''}`}></div>
+                ))}
+            </div>
       <footer>
         <p>Copyright 2025 All Rights Reserved</p>
       </footer>
