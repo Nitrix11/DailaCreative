@@ -322,12 +322,12 @@ display: none;
 }
 
   .questionnaire-container{
-    margin-top: 200px;
+    margin-top: 150px;
     .question--number{
       margin-top: 10px;
     }
 .numbers{
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .question-text{
   font-weight: bold;
