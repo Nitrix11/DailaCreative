@@ -516,14 +516,14 @@ footer{
   
 }  }
 }
-@media (min-width: 500px) and (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 700px) {
 
     
   .sign-up-container{
    
     display: flex;
     flex-direction: column;
-
+background-color: #F7941D;
   
     width: 100%;
     .image-container{
