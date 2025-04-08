@@ -386,7 +386,14 @@
     }
   }
 }
+@media (max-width: 375px) {
+  .text-overlay {
+    width: 100%;
+    text-align: center;
+}
+}
   /* For tablets (up to 425px) */
+
   @media (max-width: 425px) {
 
     .form-group{
@@ -410,6 +417,9 @@
       width: 100%;
       .image-container{
         text-align: center;
+        h2{
+          font-size: 1.2rem;
+        }
 width: 100%;
 height: 50vh;
 .text-overlay{
@@ -472,11 +482,15 @@ display: none;
     top: 30%;
   }
   #hero{
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     .nav-container{
       margin-top:130px;
+      
    
     }
     .pic1{
@@ -486,6 +500,8 @@ display: none;
   top: 25px;
   left: 80px;
       right: 0;
+      position: static;
+      width: 100%;
     }
   }
   @keyframes pic1 {
@@ -725,7 +741,12 @@ margin-top: 30px;
   text-align: center;
 }
 }
-
+@media (max-width: 375px) {
+  .text-overlay {
+    width: 100%;
+    text-align: center;
+}
+}
   /* For tablets (up to 425px) */
   @media (max-width: 320px) {
     .pic1{
@@ -978,3 +999,246 @@ margin-top: 30px;
   height: 82vh;
 }
   }
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar1 {
+  background-color: black;
+  width: 99vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#hero {
+  background-color: #fff;
+  color: black;
+  text-align: left;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: auto 0;
+  position: relative;
+  z-index: 1;
+}
+
+.description {
+  width: 60%;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 2px solid #FE5208;
+  margin: 20px 0;
+  width: 20%;
+  color: #FE5208;
+}
+
+.join-list {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button.orange {
+  background-color: black;
+}
+
+.button.orange:hover {
+  background-color: #F7941D;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #F7941D;
+  color: #fff;
+}
+
+.pic1 {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 820px;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.copyright-section {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.thank-you-container {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-container h1 {
+  font-size: 26px;
+  padding-top: 30px;
+}
+
+.thank-you-container p {
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: xx-large;
+  color: black;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) { /* Targeting devices like iPhones */
+  #hero {
+    height: auto; /* Allow height to adjust */
+    padding: 40px 10px; /* Adjust padding */
+  }
+
+  .nav-container {
+    max-width: 100%; /* Full width */
+  }
+
+  .description {
+    width: 100%; /* Full width */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .horizontal-line {
+    width: 30%; /* Adjust line width */
+  }
+
+  .pic1 {
+    max-height: 200px; /* Adjust maximum height */
+    width: 80%; /* Adjust width */
+    top: 20%; /* Adjust positioning */
+  }
+
+  .button-container {
+    flex-direction: column; /* Change to column */
+    align-items: center; /* Center items */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .thank-you-container h1 {
+    font-size: 20px; /* Smaller font size */
+  }
+
+  .thank-you-container p {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .form-container {
+    flex-direction: column; /* Change to column */
+    width: 100%; /* Full width */
+    align-items: center; /* Center items */
+  }
+}
+
+@media (max-width: 425px) { /* For smaller phones */
+  #hero {
+    padding: 20px 5px; /* Further adjust padding */
+  }
+  #hero {
+    .nav-container {
+        margin-top: 100px;
+        height: 85vh;
+        /* margin-top: 10px; */
+    }
+}
+  .sign-up-container {
+    & .image-container {
+        h2 {
+            font-size: 1.9rem;
+        }
+    }
+}
+
+  .thank-you-container h1 {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .thank-you-container p {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .pic1 {
+    max-height: 150px; /* Further reduce height */
+    width: 90%; /* Adjust width */
+  }
+
+  .form-container {
+    width: 90%; /* Adjust width */
+  }
+}
+
+@media (max-width: 375px) { /* For very small phones */
+  .navbar1 {
+    padding: 10px; /* Adjust navbar padding */
+  }
+
+  .description {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .thank-you-container h1 {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .thank-you-container p {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .pic1 {
+    max-height: 120px; /* Further reduce height */
+    width: 100%; /* Full width */
+  }
+
+  .form-container {
+    width: 95%; /* Adjust width */
+  }
+}
